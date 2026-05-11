@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- ── Primary SEO ─────────────────────────────────────────────────── -->
+  <title>Hantavirus Tracker — Live Cases, Deaths & Outbreak Map 2026</title>
+  <meta name="description" content="Real-time hantavirus tracker: live case counts, deaths, and country-by-country data for the 2026 MV Hondius Andes virus outbreak. Updated every 2 hours from WHO, ECDC, PAHO and hantavirus.live."/>
+  <meta name="keywords" content="hantavirus tracker, hantavirus live, hantavirus cases 2026, hantavirus deaths 2026, MV Hondius outbreak, Andes virus, hantavirus map, hantavirus update, hantavirus WHO, hantavirus France, hantavirus statistics"/>
+  <meta name="author" content="Hantavirus Tracker"/>
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large"/>
+  <link rel="canonical" href="https://YOUR_DOMAIN_HERE/"/>
+
+  <!-- ── Open Graph ──────────────────────────────────────────────────── -->
+  <meta property="og:type"        content="website"/>
+  <meta property="og:title"       content="Hantavirus Tracker — Live Cases & Deaths 2026"/>
+  <meta property="og:description" content="Real-time hantavirus outbreak dashboard. MV Hondius Andes virus cluster: cases, deaths, country breakdown. Updated every 2 hours from WHO sources."/>
+  <meta property="og:url"         content="https://YOUR_DOMAIN_HERE/"/>
+  <meta property="og:locale"      content="en_US"/>
+  <meta property="og:site_name"   content="Hantavirus Tracker"/>
+
+  <!-- ── Twitter Card ───────────────────────────────────────────────── -->
+  <meta name="twitter:card"        content="summary_large_image"/>
+  <meta name="twitter:title"       content="Hantavirus Tracker — Live Cases & Deaths 2026"/>
+  <meta name="twitter:description" content="Real-time hantavirus cases, deaths and country breakdown. MV Hondius Andes virus outbreak, updated every 2h from WHO."/>
+
+  <!-- ── Schema.org — SpecialAnnouncement (GEO / AI search) ──────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SpecialAnnouncement",
+    "name": "Hantavirus Outbreak — MV Hondius 2026",
+    "text": "A cluster of Andes virus (hantavirus) cases was identified aboard the Dutch cruise ship MV Hondius in May 2026. As of 11 May 2026: 12 cases (7 confirmed), 3 deaths, CFR 38%. Passengers from 23 nationalities affected. WHO risk: Low globally, Moderate on ship.",
+    "datePosted": "2026-05-02",
+    "expires": "2026-12-31",
+    "category": "https://www.wikidata.org/wiki/Q81068910",
+    "spatialCoverage": { "@type": "Place", "name": "Global / Multi-country" },
+    "announcementLocation": { "@type": "Organization", "name": "World Health Organization", "url": "https://www.who.int" },
+    "url": "https://YOUR_DOMAIN_HERE/"
+  }
+  </script>
+
+  <!-- ── Schema.org — Dataset ───────────────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "Hantavirus Outbreak Tracker 2026 — MV Hondius",
+    "description": "Live-updated dataset of hantavirus cases, deaths, and country-level data for the 2026 MV Hondius Andes virus outbreak, aggregated from WHO DON, hantavirus.live, and hantavirusmap.com.",
+    "keywords": ["hantavirus", "Andes virus", "MV Hondius", "outbreak", "WHO", "2026"],
+    "url": "https://YOUR_DOMAIN_HERE/data.json",
+    "creator": { "@type": "Organization", "name": "Hantavirus Tracker" },
+    "temporalCoverage": "2026-04-01/..",
+    "spatialCoverage": "Global",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "isAccessibleForFree": true,
+    "distribution": [{
+      "@type": "DataDownload",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://YOUR_DOMAIN_HERE/data.json"
+    }]
+  }
+  </script>
+
+  <!-- ── Schema.org — FAQ (GEO: answers common questions) ──────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many hantavirus cases are there in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As of May 11, 2026, there are 12 cases linked to the MV Hondius cruise ship outbreak (7 confirmed, 2 probable), with 3 deaths (CFR 38%). Globally, 229 cases and 59 deaths were reported in the Americas in 2025."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many people have died from hantavirus in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "3 people have died in the 2026 MV Hondius Andes virus outbreak: a Dutch couple and a German national. Globally, 59 deaths were recorded in the Americas in 2025."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is hantavirus spreading in France?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As of May 11, 2026, France has 1 confirmed case: a French female passenger from the MV Hondius. 5 French nationals are isolated at Hôpital Bichat in Paris, and 22 contacts are being monitored. A quarantine decree mandates 15–42 days isolation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can hantavirus spread from person to person?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Andes virus (ANDV) is the only known hantavirus capable of limited human-to-human transmission. It requires close, prolonged contact. Most hantavirus strains spread only through contact with infected rodent urine, feces, or saliva."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the hantavirus death rate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hantavirus case fatality ratio ranges from less than 1–5% in Europe (HFRS) to 25–50% in the Americas (HPS). The 2026 MV Hondius cluster has a CFR of 38% (3 deaths out of 8 cases as of May 8, per WHO DON600)."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg:      #0a0e1a;
+      --surface: #111827;
+      --border:  #1e2d45;
+      --text:    #e2e8f0;
+      --muted:   #64748b;
+      --red:     #ef4444;
+      --orange:  #f97316;
+      --blue:    #3b82f6;
+      --green:   #10b981;
+      --yellow:  #f59e0b;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    /* ── HEADER ── */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      background: rgba(10,14,26,.95);
+      backdrop-filter: blur(12px);
+      z-index: 100;
+    }
+    .logo { display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600; letter-spacing: -.02em; }
+    .logo-icon { width: 28px; height: 28px; background: linear-gradient(135deg,#ef4444,#b91c1c); border-radius: 7px; display:flex; align-items:center; justify-content:center; font-size:15px; }
+    .live-badge { display:flex; align-items:center; gap:6px; font-size:11px; font-weight:700; letter-spacing:.1em; color:var(--red); text-transform:uppercase; }
+    .live-dot { width:7px; height:7px; background:var(--red); border-radius:50%; animation:pulse 1.4s ease-in-out infinite; }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.4;transform:scale(.8)} }
+    .header-right { display:flex; align-items:center; gap:20px; }
+    .updated { font-size:12px; color:var(--muted); }
+
+    /* ── MAIN ── */
+    main { max-width:960px; margin:0 auto; padding:28px 20px 64px; }
+
+    /* ── ALERTS ── */
+    .alert {
+      border-radius:12px; padding:16px 20px; margin-bottom:12px;
+      display:flex; align-items:flex-start; gap:14px;
+    }
+    .alert.red    { background:linear-gradient(135deg,rgba(239,68,68,.1),rgba(180,36,36,.05)); border:1px solid rgba(239,68,68,.3); }
+    .alert.orange { background:linear-gradient(135deg,rgba(249,115,22,.08),rgba(180,80,10,.04)); border:1px solid rgba(249,115,22,.25); }
+    .alert-icon { font-size:20px; flex-shrink:0; margin-top:1px; }
+    .alert-title { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; margin-bottom:3px; }
+    .alert.red .alert-title    { color:var(--red); }
+    .alert.orange .alert-title { color:var(--orange); }
+    .alert-text { font-size:14px; line-height:1.5; }
+    .alert.red .alert-text    { color:#fca5a5; }
+    .alert.orange .alert-text { color:#fed7aa; }
+
+    /* ── STATS ── */
+    .stats-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:20px 0; }
+    .stat-card { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:22px 24px; }
+    .stat-card.red    { border-color:rgba(239,68,68,.3); }
+    .stat-card.orange { border-color:rgba(249,115,22,.3); }
+    .stat-label { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--muted); margin-bottom:8px; }
+    .stat-value { font-size:44px; font-weight:800; letter-spacing:-.04em; line-height:1; margin-bottom:8px; }
+    .stat-value.red    { color:var(--red); }
+    .stat-value.orange { color:var(--orange); }
+    .stat-value.blue   { color:var(--blue); }
+    .stat-sub { font-size:12px; color:var(--muted); line-height:1.5; }
+    .stat-sub strong { color:#94a3b8; }
+
+    /* ── SECTION ── */
+    .section { background:var(--surface); border:1px solid var(--border); border-radius:12px; margin-bottom:16px; overflow:hidden; }
+    .section-header { padding:15px 24px 13px; border-bottom:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; }
+    .section-title { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.09em; color:var(--muted); }
+    .badge { font-size:11px; padding:2px 9px; border-radius:20px; font-weight:600; }
+    .badge-red    { background:rgba(239,68,68,.15); color:var(--red); }
+    .badge-blue   { background:rgba(59,130,246,.15); color:var(--blue); }
+    .badge-green  { background:rgba(16,185,129,.15); color:var(--green); }
+    .badge-orange { background:rgba(249,115,22,.15); color:var(--orange); }
+
+    /* ── COUNTRY TABLE ── */
+    .country-list { padding:6px 0; }
+    .country-row {
+      display:grid;
+      grid-template-columns: 32px 1fr 56px 56px 120px;
+      align-items:center;
+      gap:14px;
+      padding:11px 24px;
+      border-bottom:1px solid rgba(30,45,69,.5);
+      transition:background .15s;
+    }
+    .country-row.highlight { background:rgba(239,68,68,.04); border-left:2px solid rgba(239,68,68,.5); padding-left:22px; }
+    .country-row:last-child { border-bottom:none; }
+    .country-row:hover { background:rgba(255,255,255,.025); }
+
+    .country-flag { font-size:20px; text-align:center; }
+    .country-name { font-size:14px; font-weight:500; }
+    .country-name small { display:block; font-size:11px; color:var(--muted); font-weight:400; margin-top:1px; }
+
+    .col-num { text-align:right; }
+    .col-cases  { font-size:15px; font-weight:700; color:var(--orange); }
+    .col-deaths { font-size:15px; font-weight:700; color:var(--red); }
+    .col-dash   { font-size:13px; color:var(--muted); }
+
+    .country-bar-wrap { height:5px; background:rgba(255,255,255,.05); border-radius:3px; overflow:hidden; }
+    .country-bar { height:100%; border-radius:3px; background:linear-gradient(90deg,var(--blue),#6366f1); }
+    .country-bar.hot { background:linear-gradient(90deg,var(--red),var(--orange)); }
+
+    .col-header { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); text-align:right; }
+
+    /* ── TIMELINE ── */
+    .timeline { padding:20px 24px; }
+    .tl-item { display:flex; gap:16px; margin-bottom:20px; position:relative; }
+    .tl-item:last-child { margin-bottom:0; }
+    .tl-item:not(:last-child)::before {
+      content:''; position:absolute; left:4px; top:22px; bottom:-8px;
+      width:1px; background:var(--border);
+    }
+    .tl-dot { width:9px; height:9px; border-radius:50%; flex-shrink:0; margin-top:6px; }
+    .dot-red    { background:var(--red);    box-shadow:0 0 0 3px rgba(239,68,68,.2); }
+    .dot-orange { background:var(--orange); }
+    .dot-blue   { background:var(--blue);   }
+    .dot-muted  { background:var(--muted);  }
+    .tl-date { font-size:11px; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; padding-top:1px; min-width:84px; flex-shrink:0; }
+    .tl-event  { font-size:14px; font-weight:500; line-height:1.4; }
+    .tl-detail { font-size:12px; color:var(--muted); margin-top:2px; line-height:1.5; }
+
+    /* ── CONTEXT ── */
+    .context-grid { display:grid; grid-template-columns:1fr 1fr; }
+    .context-item { padding:20px 24px; }
+    .context-item:first-child { border-right:1px solid var(--border); }
+    .context-region { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin-bottom:12px; }
+    .ctx-row { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+    .ctx-label { font-size:13px; color:#94a3b8; }
+    .ctx-value { font-size:15px; font-weight:700; }
+    .ctx-note { font-size:11px; color:var(--muted); margin-top:12px; border-top:1px solid var(--border); padding-top:10px; line-height:1.5; }
+
+    /* ── RISK ── */
+    .risk-row { display:flex; align-items:center; gap:10px; padding:14px 24px; font-size:14px; }
+    .risk-blocks { display:flex; gap:4px; }
+    .risk-block { width:20px; height:6px; border-radius: 2px; }
+
+    /* ── FAQ (hidden visually, for SEO) �G�R�R ���(�������ĵ͕�ѥ���쁵�ɝ���ѽ�������(�������ĵ�ѕ��������������������쁉�ɑ�ȵ���ѽ������ͽ����ɝ�������԰�䰸Ԥ��(�������ĵ�ѕ�鱅�е������쁉�ɑ�ȵ���ѽ�鹽����(�������ĵā쁙��еͥ������쁙��еݕ��������쁵�ɝ������ѽ�����쁍��ͽ������ѕ�쁑������陱��쁩��ѥ�䵍��ѕ������������ݕ��쁅������ѕ��鍕�ѕ���(�������ĵ��酙ѕȁ쁍��ѕ��蟊jX�쁙��еͥ������쁍�����مȠ����ѕ����(�������ĵ��쁙��еͥ������쁍������ф͈�쁱�����������ĸ�쁑������鹽����(�������ĵ�ѕ����������ĵ��쁑������鉱�����(�������ĵ�ѕ��������faq-q::after { content:'▴'; }
+
+    /* ── SOURCES ── */
+    .sources { text-align:center; font-size:12px; color:var(--muted); margin-top:28px; line-height:2.2; }
+    .sources a { color:#60a5fa; text-decoration:none; }
+    .sources a:hover { text-decoration:underline; }
+    .disclaimer { font-size:11px; color:#374151; text-align:center; margin-top:8px; }
+
+    /* ── LOADING ── */
+    #loading { text-align:center; padding:40px; color:var(--muted); font-size:14px; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width:640px) {
+      .stats-grid { grid-template-columns:1fr; }
+      .context-grid { grid-template-columns:1fr; }
+      .context-item:first-child { border-right:none; border-bottom:1px solid var(--border); }
+      header { padding:14px 16px; }
+      main { padding:14px 12px 48px; }
+      .stat-value { font-size:36px; }
+      .country-row { grid-template-columns:28px 1fr 46px 46px; }
+      .country-row .country-bar-wrap { display:none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <div class="logo-icon">🦠</div>
+      Hantavirus Tracker
+    </div>
+    <div class="header-right">
+      <div class="live-badge"><div class="live-dot"></div>Live</div>
+      <div class="updated" id="js-updated">—</div>
+    </div>
+  </header>
+
+  <main>
+    <div id="loading">Loading live data…</div>
+    <div id="app" style="display:none">
+
+      <!-- ALERTS -->
+      <div id="js-alerts"></div>
+
+      <!-- STATS -->
+      <div class="stats-grid">
+        <div class="stat-card red">
+          <div class="stat-label">Deaths</div>
+          <div class="stat-value red" id="js-deaths">—</div>
+          <div class="stat-sub" id="js-deaths-sub"></div>
+        </div>
+        <div class="stat-card orange">
+          <div class="stat-label">Cases (active outbreak)</div>
+          <div class="stat-value orange" id="js-cases">—</div>
+          <div class="stat-sub" id="js-cases-sub"></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Case Fatality Ratio</div>
+          <div class="stat-value blue" id="js-cfr">—</div>
+          <div class="stat-sub" id="js-cfr-sub"></div>
+        </div>
+      </div>
+
+      <!-- COUNTRIES -->
+      <div class="section">
+        <div class="section-header">
+          <div class="section-title">Countries — Cases & Deaths · MV Hondius Outbreak</div>
+          <div class="badge badge-blue" id="js-updated-badge">—</div>
+        </div>
+        <!-- header row -->
+        <div class="country-row" style="padding-top:8px;padding-bottom:6px;border-bottom:1px solid var(--border);">
+          <div></div>
+          <div class="col-header">Country</div>
+          <div class="col-header">Cases</div>
+          <div class="col-header">Deaths</div>
+          <div class="col-header" style="text-align:left;padding-left:4px;">Activity</div>
+        </div>
+        <div class="country-list" id="js-countries"></div>
+        <div style="padding:10px 24px 14px;font-size:11px;color:var(--muted);border-top:1px solid var(--border);">
+          Cases and deaths refer to the MV Hondius 2026 Andes virus cluster only.
+          Activity bar = relative signal volume (news + official reports).
+          "—" = no confirmed case of that nationality; country is monitoring contacts or provided logistics.
+        </div>
+      </div>
+
+      <!-- WHO RISK -->
+      <div class="section">
+        <div class="section-header">
+          <div class="section-title">WHO Risk Assessment</div>
+          <div class="badge badge-green">DON600 · 8 May 2026</div>
+        </div>
+        <div style="padding:6px 0 4px;">
+          <div class="risk-row">
+            <div class="risk-blocks">
+              <div class="risk-block" style="background:var(--green)"></div>
+              <div class="risk-block" style="background:rgba(100,116,139,.2)"></div>
+              <div class="risk-block" style="background:rgba(100,116,139,.2)"></div>
+              <div class="risk-block" style="background:rgba(100,116,139,.2)"></div>
+            </div>
+            <strong style="color:var(--green)">LOW</strong>
+            <span style="font-size:13px;color:var(--muted);margin-left:6px">— Global population risk</span>
+          </div>
+          <div class="risk-row" style="padding-top:4px;">
+            <div class="risk-blocks">
+              <div class="risk-block" style="background:var(--yellow)"></div>
+              <div class="risk-block" style="background:var(--yellow)"></div>
+              <div class="risk-block" style="background:rgba(100,116,139,.2)"></div>
+              <div class="risk-block" style="background:rgba(100,116,139,.2)"></div>
+            </div>
+            <strong style="color:var(--yellow)">MODERATE</strong>
+            <span style="font-size:13px;color:var(--muted);margin-left:6px">— Passengers & crew on the ship</span>
+          </div>
+        </div>
+        <div style="padding:4px 24px 16px;font-size:13px;color:#94a3b8;line-height:1.6;">
+          Andes virus (ANDV) is the only hantavirus with documented human-to-human transmission, but this requires close, prolonged contact.
+          Average age of passengers: 65. WHO advises against travel or trade restrictions.
+          Contacts should self-monitor for 42 days after last exposure.
+        </div>
+      </div>
+
+      <!-- TIMELINE -->
+      <div class="section">
+        <div class="section-header">
+          <div class="section-title">Timeline — MV Hondius · Andes Virus 2026</div>
+          <div class="badge badge-red">Ongoing</div>
+        </div>
+        <div class="timeline" id="js-timeline"></div>
+      </div>
+
+      <!-- GLOBAL CONTEXT -->
+      <div class="section">
+        <div class="section-header">
+          <div class="section-title">Global Context — Official Data</div>
+          <div class="badge badge-blue">PAHO · ECDC</div>
+        </div>
+        <div class="context-grid" id="js-context">
+          <div class="context-item">
+            <div class="context-region">🌎 Americas — 2025 (Epi week 47)</div>
+            <div class="ctx-row"><span class="ctx-label">Cases reported</span><span class="ctx-value" style="color:var(--orange)">229</span></div>
+            <div class="ctx-row"><span class="ctx-label">Deaths</span><span class="ctx-value" style="color:var(--red)">59</span></div>
+            <div class="ctx-row"><span class="ctx-label">CFR</span><span class="ctx-value" style="color:var(--yellow)">25.7%</span></div>
+            <div class="ctx-row"><span class="ctx-label">Countries affected</span><span class="ctx-value" style="color:var(--blue)">8</span></div>
+            <div class="ctx-note">Andes virus (Patagonia) + Sin Nombre virus (USA, Four Corners region). Source: PAHO/WHO epidemiological alert, Dec 2025.</div>
+          </div>
+          <div class="context-item">
+            <div class="context-region">🌍 Europe — 2023 (HFRS)</div>
+            <div class="ctx-row"><span class="ctx-label">Cases reported</span><span class="ctx-value" style="color:var(--orange)">1,885</span></div>
+            <div class="ctx-row"><span class="ctx-label">Incidence</span><span class="ctx-value" style="color:var(--blue)">0.4 / 100k</span></div>
+            <div class="ctx-row"><span class="ctx-label">CFR</span><span class="ctx-value" style="color:var(--green)">&lt;1–5%</span></div>
+            <div class="ctx-row"><span class="ctx-label">Trend</span><span class="ctx-value" style="color:var(--green)">↓ Lowest 2019–2023</span></div>
+            <div class="ctx-note">Mostly Puumala virus (HFRS, mild). Source: ECDC Annual Epidemiological Report 2023.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ (SEO / GEO) -->
+      <div class="section">
+        <div class="section-header">
+          <div class="section-title">Frequently Asked Questions</div>
+          <div class="badge badge-blue">SEO · AI Search</div>
+        </div>
+        <div class="faq-section">
+          <div class="faq-item">
+            <div class="faq-q">How many hantavirus cases are there in 2026?</div>
+            <div class="faq-a">As of May 11, 2026, there are 12 cases (7 confirmed, 2 probable) linked to the MV Hondius Andes virus cruise ship outbreak, with 3 deaths (CFR 38%). Globally, 229 cases and 59 deaths were reported in the Americas in 2025.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">How many people have died from hantavirus in 2026?</div>
+            <div class="faq-a">3 people have died in the 2026 MV Hondius outbreak: a Dutch couple and a German national. Globally, 59 hantavirus deaths were recorded in the Americas in 2025 (CFR 25.7%).</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">Is there a hantavirus case in France?</div>
+            <div class="faq-a">Yes. As of May 11, 2026, France has 1 confirmed hantavirus case: a French female passenger from the MV Hondius. 5 French nationals are isolated at Hôpital Bichat in Paris, and 22 contacts are being monitored under a government quarantine decree (15–42 days isolation).</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">Can hantavirus spread from person to person?</div>
+            <div class="faq-a">The Andes virus (ANDV) is the only known hantavirus capable of limited human-to-human transmission, requiring close and prolonged contact. All other hantavirus strains (Sin Nombre, Puumala, etc.) spread only through contact with infected rodent urine, feces, or saliva — not between people.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">What is the hantavirus death rate (CFR)?</div>
+            <div class="faq-a">Case fatality ratio ranges from &lt;1–5% in Europe (HFRS/Puumala) to 25–50% in the Americas (HPS/Andes). The 2026 MV Hondius cluster has a CFR of 38% per WHO DON600 (8 May 2026). This high rate is partly explained by the passengers' average age of 65.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">Where did the 2026 hantavirus outbreak start?</div>
+            <div class="faq-a">The outbreak was traced to the Dutch cruise ship MV Hondius, which departed Ushuaia, Argentina on April 1, 2026. Patient zero (Case 1, a Dutch male) likely acquired the Andes virus through contact with infected rodents during birdwatching activities in Argentina before boarding.</div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /#app -->
+  </main>
+
+  <div class="sources">
+    Data sources: <a href="https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON600" target="_blank" rel="noopener">WHO DON600</a> ·
+    <a href="https://hantavirus.live/" target="_blank" rel="noopener">hantavirus.live</a> ·
+    <a href="https://hantavirusmap.com/outbreaks/mv-hondius-2026" target="_blank" rel="noopener">HantavirusMap</a> ·
+    <a href="https://www.ecdc.europa.eu/en/publications-data/hantavirus-infection-annual-epidemiological-report-2023" target="_blank" rel="noopener">ECDC 2023</a> ·
+    <a href="https://www.paho.org/en/documents/epidemiological-alert-hantavirus-pulmonary-syndrome-americas-region-19-december-2025" target="_blank" rel="noopener">PAHO 2025</a><br>
+    Auto-updated every 2 hours via GitHub Actions · <a href="data.json" target="_blank">Raw JSON</a>
+  </div>
+  <div class="disclaimer">For informational purposes only. Not medical advice. Data sourced from verified public health authorities.</div>
+
+  <script>
+    // ── helpers ──────────────────────────────────────────────────────────────
+    function fmt(n) { return n == null ? '—' : n.toLocaleString(); }
+
+    function dateLabel(iso) {
+      const d = new Date(iso);
+      return d.toLocaleDateString('en-GB', { day:'2-digit', month:'short', year:'numeric' });
+    }
+
+    function timeLabel(iso) {
+      const d = new Date(iso);
+      return d.toLocaleString('en-GB', {
+        day:'2-digit', month:'short', year:'numeric',
+        hour:'2-digit', minute:'2-digit', timeZoneName:'short'
+      });
+    }
+
+    // ── render ───────────────────────────────────────────────────────────────
+    function render(d) {
+      const ob = d.outbreak;
+      const gl = d.global;
+
+      // Updated stamp
+      document.getElementById('js-updated').textContent =
+        'Updated: ' + timeLabel(d.meta.lastUpdated);
+      document.getElementById('js-updated-badge').textContent =
+        'Updated ' + dateLabel(d.meta.lastUpdated);
+
+      // Alerts
+      const alerts = document.getElementById('js-alerts');
+      alerts.innerHTML = `
+        <div class="alert red">
+          <div class="alert-icon">🚨</div>
+          <div>
+            <div class="alert-title">New — First confirmed case in France · May 11, 2026</div>
+            <div class="alert-text">A French female passenger tested positive for Andes virus.
+              <strong>5 French nationals</strong> isolated at <strong>Hôpital Bichat, Paris</strong>.
+              <strong>22 contacts</strong> monitored. Government quarantine decree: 15–42 days isolation.</div>
+          </div>
+        </div>
+        <div class="alert orange">
+          <div class="alert-icon">⚠️</div>
+          <div>
+            <div class="alert-title">Active outbreak — ${ob.name}</div>
+            <div class="alert-text">
+              Dutch-flagged ship departed Ushuaia (Argentina) Apr 1.
+              ${ob.shipStatus}. WHO DON600 active.
+              <em>Only hantavirus strain with documented human-to-human transmission.</em>
+            </div>
+          </div>
+        </div>`;
+
+      // Stats
+      document.getElementById('js-deaths').textContent = fmt(ob.deaths);
+      document.getElementById('js-deaths-sub').innerHTML =
+        `<strong>${ob.name}</strong><br>Dutch couple + 1 German national`;
+      document.getElementById('js-cases').textContent = fmt(ob.cases);
+      document.getElementById('js-cases-sub').innerHTML =
+        `<strong>${ob.confirmed} confirmed</strong> · ${ob.probable ?? '?'} probable<br>incl. 1 confirmed case in France (May 11)`;
+      document.getElementById('js-cfr').textContent = ob.cfr + '%';
+      document.getElementById('js-cfr-sub').innerHTML =
+        `<strong>WHO DON600</strong> · 8 May 2026<br>Up to 50% in severe HPS (Andes)`;
+
+      // Countries
+      const maxSignals = Math.max(...d.countries.map(c => c.signals ?? 0), 1);
+      const countriesEl = document.getElementById('js-countries');
+      countriesEl.innerHTML = d.countries.map((c, i) => {
+        const signals   = c.signals ?? 0;
+        const barPct    = Math.round((signals / maxSignals) * 100);
+        const isHot     = c.deaths > 0;
+        const highlight = c.name === 'France' || (c.cases > 0 && c.deaths > 0);
+        const casesHtml = c.cases == null
+          ? `<div class="col-num col-dash">—</div>`
+          : `<div class="col-num col-cases">${c.cases}</div>`;
+        const deathsHtml = c.deaths == null
+          ? `<div class="col-num col-dash">—</div>`
+          : c.deaths === 0
+            ? `<div class="col-num col-dash" style="color:var(--muted)">0</div>`
+            : `<div class="col-num col-deaths">${c.deaths}</div>`;
+        return `
+          <div class="country-row${highlight ? ' highlight' : ''}">
+            <div class="country-flag">${c.flag}</div>
+            <div class="country-name">${c.name}<small>${c.note}</small></div>
+            ${casesHtml}
+            ${deathsHtml}
+            <div class="country-bar-wrap">
+              <div class="country-bar${isHot ? ' hot' : ''}" style="width:${barPct}%"></div>
+            </div>
+          </div>`;
+      }).join('');
+
+      // Timeline
+      const typeMap = {
+        critical: { cls:'dot-red',    label:'' },
+        major:    { cls:'dot-orange', label:'' },
+        official: { cls:'dot-blue',   label:'' },
+        start:    { cls:'dot-muted',  label:'' },
+      };
+      const tlEl = document.getElementById('js-timeline');
+      tlEl.innerHTML = d.timeline.map(t => {
+        const dt = typeMap[t.type] || typeMap.major;
+        const d2 = new Date(t.date);
+        const label = d2.toLocaleDateString('en-GB', {day:'numeric', month:'short', year:'numeric'});
+        return `
+          <div class="tl-item">
+            <div class="tl-dot ${dt.cls}"></div>
+            <div class="tl-date">${label}</div>
+            <div>
+              <div class="tl-event">${t.event}</div>
+              <div class="tl-detail">${t.detail}</div>
+            </div>
+          </div>`;
+      }).join('');
+
+      // Show app
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('app').style.display = 'block';
+    }
+
+    // ── FAQ accordion ────────────────────────────────────────────────────────
+    document.addEventListener('click', e => {
+      const q = e.target.closest('.faq-q');
+      if (!q) return;
+      q.closest('.faq-item').classList.toggle('open');
+    });
+
+    // ── load data.json ───────────────────────────────────────────────────────
+    fetch('data.json?_=' + Date.now())
+      .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(render)
+      .catch(err => {
+        console.warn('Could not load data.json, using fallback.', err);
+        // Minimal fallback so the page isn't blank when opened locally
+        document.getElementById('loading').textContent =
+          '⚠ Could not load live data. Open via a local server or GitHub Pages.';
+      });
+  </script>
+</body>
+</html>
