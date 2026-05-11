@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastUpdated": "2026-05-11T12:00:00Z",
-    "source": "WHO DON600 (8 May 2026) + hantavirus.live + hantavirusmap.com",
+    "lastUpdated": "2026-05-11T15:04:05Z",
+    "source": "WHO DON600 (8 May 2026) + hantavirus.live (live) + hantavirusmap.com (live)",
     "nextUpdate": "auto — every 2 hours via GitHub Actions"
   },
   "outbreak": {
@@ -10,7 +10,7 @@
     "confirmed": 7,
     "probable": 2,
     "deaths": 3,
-    "cfr": 38,
+    "cfr": 25.0,
     "contacts": 22,
     "status": "active",
     "ship": "MV Hondius (Dutch-flagged)",
@@ -18,39 +18,187 @@
     "virusStrain": "Andes virus (ANDV)",
     "whoDoc": "DON600",
     "whoRisk": "Low (global) / Moderate (ship)",
-    "shipStatus": "Departed Tenerife — en route Rotterdam (May 11)"
+    "shipStatus": "En route Rotterdam"
   },
   "global": {
-    "americas2025": { "cases": 229, "deaths": 59, "cfr": 25.7, "countries": 8 },
-    "europe2023": { "cases": 1885, "incidencePer100k": 0.4, "cfr": "<5" }
+    "americas2025": {
+      "cases": 229,
+      "deaths": 59,
+      "cfr": 25.7,
+      "countries": 8
+    },
+    "europe2023": {
+      "cases": 1885,
+      "incidencePer100k": 0.4,
+      "cfr": "<5"
+    }
   },
   "countries": [
-    { "flag": "FR", "name": "France", "cases": 1, "deaths": 0, "note": "1 confirmed — 5 isolated at Bichat hospital, 22 contacts monitored. Quarantine decree: 15-42 days." },
-    { "flag": "NL", "name": "Netherlands", "cases": 4, "deaths": 2, "note": "Dutch couple among first deaths. Cases 5 & 6 evacuated to Amsterdam. Ship registry." },
-    { "flag": "DE", "name": "Germany", "cases": 1, "deaths": 1, "note": "Case 4 — German national died on board May 2. 4 passengers repatriated to Frankfurt." },
-    { "flag": "CH", "name": "Switzerland", "cases": 1, "deaths": 0, "note": "Case 7 — disembarked St Helena Apr 22, hospitalized in Zurich May 1." },
-    { "flag": "GB", "name": "United Kingdom", "cases": 1, "deaths": 0, "note": "Case 8 — disembarked Tristan da Cunha Apr 14, probable case under monitoring." },
-    { "flag": "ZA", "name": "South Africa", "cases": 1, "deaths": 0, "note": "Case 3 — ICU in Johannesburg. PCR confirmed by NICD." },
-    { "flag": "AR", "name": "Argentina", "cases": null, "deaths": null, "note": "Origin of outbreak. Endemic Andes virus. Patient zero exposed here before boarding." },
-    { "flag": "US", "name": "United States", "cases": null, "deaths": null, "note": "Endemic Sin Nombre virus (Four Corners). 1 American passenger tested positive." },
-    { "flag": "ES", "name": "Spain", "cases": 0, "deaths": 0, "note": "Port of Tenerife — disembarkation hub. Coordinating medical evacuations." },
-    { "flag": "CV", "name": "Cape Verde", "cases": 0, "deaths": 0, "note": "Ship moored off coast. Samples sent to Institut Pasteur de Dakar." },
-    { "flag": "IT", "name": "Italy", "cases": 0, "deaths": 0, "note": "Passengers repatriated and monitored." },
-    { "flag": "CA", "name": "Canada", "cases": 0, "deaths": 0, "note": "Contact tracing ongoing for returning passengers." },
-    { "flag": "IN", "name": "India", "cases": 0, "deaths": 0, "note": "Passengers repatriated and monitored." },
-    { "flag": "NO", "name": "Norway", "cases": 0, "deaths": 0, "note": "Contacts under surveillance." }
+    {
+      "flag": "FR",
+      "name": "France",
+      "cases": 1,
+      "deaths": 0,
+      "note": "1 confirmed — 5 isolated at Bichat hospital, 22 contacts monitored. Quarantine decree: 15-42 days."
+    },
+    {
+      "flag": "NL",
+      "name": "Netherlands",
+      "cases": 4,
+      "deaths": 2,
+      "note": "Dutch couple among first deaths. Cases 5 & 6 evacuated to Amsterdam. Ship registry."
+    },
+    {
+      "flag": "DE",
+      "name": "Germany",
+      "cases": 1,
+      "deaths": 1,
+      "note": "Case 4 — German national died on board May 2. 4 passengers repatriated to Frankfurt."
+    },
+    {
+      "flag": "CH",
+      "name": "Switzerland",
+      "cases": 1,
+      "deaths": 0,
+      "note": "Case 7 — disembarked St Helena Apr 22, hospitalized in Zurich May 1."
+    },
+    {
+      "flag": "GB",
+      "name": "United Kingdom",
+      "cases": 1,
+      "deaths": 0,
+      "note": "Case 8 — disembarked Tristan da Cunha Apr 14, probable case under monitoring."
+    },
+    {
+      "flag": "ZA",
+      "name": "South Africa",
+      "cases": 1,
+      "deaths": 0,
+      "note": "Case 3 — ICU in Johannesburg. PCR confirmed by NICD."
+    },
+    {
+      "flag": "AR",
+      "name": "Argentina",
+      "cases": null,
+      "deaths": null,
+      "note": "Origin of outbreak. Endemic Andes virus. Patient zero exposed here before boarding."
+    },
+    {
+      "flag": "US",
+      "name": "United States",
+      "cases": null,
+      "deaths": null,
+      "note": "Endemic Sin Nombre virus (Four Corners). 1 American passenger tested positive."
+    },
+    {
+      "flag": "ES",
+      "name": "Spain",
+      "cases": 0,
+      "deaths": 0,
+      "note": "Port of Tenerife — disembarkation hub. Coordinating medical evacuations."
+    },
+    {
+      "flag": "CV",
+      "name": "Cape Verde",
+      "cases": 0,
+      "deaths": 0,
+      "note": "Ship moored off coast. Samples sent to Institut Pasteur de Dakar."
+    },
+    {
+      "flag": "IT",
+      "name": "Italy",
+      "cases": 0,
+      "deaths": 0,
+      "note": "Passengers repatriated and monitored."
+    },
+    {
+      "flag": "CA",
+      "name": "Canada",
+      "cases": 0,
+      "deaths": 0,
+      "note": "Contact tracing ongoing for returning passengers."
+    },
+    {
+      "flag": "IN",
+      "name": "India",
+      "cases": 0,
+      "deaths": 0,
+      "note": "Passengers repatriated and monitored."
+    },
+    {
+      "flag": "NO",
+      "name": "Norway",
+      "cases": 0,
+      "deaths": 0,
+      "note": "Contacts under surveillance."
+    }
   ],
   "timeline": [
-    { "date": "2026-05-11", "type": "critical", "event": "First confirmed case in France", "detail": "French female passenger tests positive. 5 French nationals isolated at Hopital Bichat (Paris). 22 contacts identified. Quarantine decree: 15-42 days. MV Hondius departs Tenerife to Rotterdam." },
-    { "date": "2026-05-10", "type": "major", "event": "MV Hondius arrives at Tenerife — international disembarkation", "detail": "Port of Granadilla (05:30). Passengers from 23 nationalities repatriated. 4 Germans flown to Frankfurt. 1 American tested positive. Evacuations coordinated by WHO + ECDC." },
-    { "date": "2026-05-08", "type": "official", "event": "WHO DON600 — 8 cases, 3 deaths, CFR 38%", "detail": "6 confirmed + 2 probable cases. All lab-confirmed cases identified as Andes virus by PCR/sequencing. Risk: Low globally, Moderate on ship." },
-    { "date": "2026-05-07", "type": "major", "event": "UK Army parachutes onto Tristan da Cunha", "detail": "British Army drops medical team to remote island to assist Case 8 (probable)." },
-    { "date": "2026-05-06", "type": "official", "event": "Andes virus confirmed in all 6 lab cases", "detail": "Genomic sequencing at NICD South Africa and Geneva University Hospitals. Argentina publishes patient zero travel history." },
-    { "date": "2026-05-04", "type": "official", "event": "WHO DON599 — 7 cases, 3 deaths", "detail": "First official WHO outbreak notice. Risk assessed as low globally." },
-    { "date": "2026-05-02", "type": "critical", "event": "Case 4 dies on board — WHO notified", "detail": "German national (female). Symptoms onset Apr 28. PCR confirmed at NICD South Africa." },
-    { "date": "2026-04-27", "type": "major", "event": "Case 3 evacuated (Ascension to Johannesburg, ICU)", "detail": "Adult male, symptoms Apr 24. PCR+ confirmed May 2. Andes virus confirmed by sequencing." },
-    { "date": "2026-04-26", "type": "critical", "event": "Case 2 dies in Johannesburg (Dutch national)", "detail": "Wife of patient zero. Disembarked St Helena Apr 24. Died at emergency department. PCR confirmed May 4." },
-    { "date": "2026-04-11", "type": "critical", "event": "Case 1 dies on board — Patient zero", "detail": "Dutch male. Symptoms from Apr 6 (fever, headache, diarrhoea, respiratory distress). Exposed to rodents during birdwatching in Argentina." },
-    { "date": "2026-04-01", "type": "start", "event": "MV Hondius departs Ushuaia, Argentina", "detail": "147 people on board (88 passengers, 59 crew), 23 nationalities. Itinerary: Antarctica, South Georgia, Tristan da Cunha, St Helena, Ascension Island, Cape Verde." }
+    {
+      "date": "2026-05-11",
+      "type": "critical",
+      "event": "First confirmed case in France",
+      "detail": "French female passenger tests positive. 5 French nationals isolated at Hopital Bichat (Paris). 22 contacts identified. Quarantine decree: 15-42 days. MV Hondius departs Tenerife to Rotterdam."
+    },
+    {
+      "date": "2026-05-10",
+      "type": "major",
+      "event": "MV Hondius arrives at Tenerife — international disembarkation",
+      "detail": "Port of Granadilla (05:30). Passengers from 23 nationalities repatriated. 4 Germans flown to Frankfurt. 1 American tested positive. Evacuations coordinated by WHO + ECDC."
+    },
+    {
+      "date": "2026-05-08",
+      "type": "official",
+      "event": "WHO DON600 — 8 cases, 3 deaths, CFR 38%",
+      "detail": "6 confirmed + 2 probable cases. All lab-confirmed cases identified as Andes virus by PCR/sequencing. Risk: Low globally, Moderate on ship."
+    },
+    {
+      "date": "2026-05-07",
+      "type": "major",
+      "event": "UK Army parachutes onto Tristan da Cunha",
+      "detail": "British Army drops medical team to remote island to assist Case 8 (probable)."
+    },
+    {
+      "date": "2026-05-06",
+      "type": "official",
+      "event": "Andes virus confirmed in all 6 lab cases",
+      "detail": "Genomic sequencing at NICD South Africa and Geneva University Hospitals. Argentina publishes patient zero travel history."
+    },
+    {
+      "date": "2026-05-04",
+      "type": "official",
+      "event": "WHO DON599 — 7 cases, 3 deaths",
+      "detail": "First official WHO outbreak notice. Risk assessed as low globally."
+    },
+    {
+      "date": "2026-05-02",
+      "type": "critical",
+      "event": "Case 4 dies on board — WHO notified",
+      "detail": "German national (female). Symptoms onset Apr 28. PCR confirmed at NICD South Africa."
+    },
+    {
+      "date": "2026-04-27",
+      "type": "major",
+      "event": "Case 3 evacuated (Ascension to Johannesburg, ICU)",
+      "detail": "Adult male, symptoms Apr 24. PCR+ confirmed May 2. Andes virus confirmed by sequencing."
+    },
+    {
+      "date": "2026-04-26",
+      "type": "critical",
+      "event": "Case 2 dies in Johannesburg (Dutch national)",
+      "detail": "Wife of patient zero. Disembarked St Helena Apr 24. Died at emergency department. PCR confirmed May 4."
+    },
+    {
+      "date": "2026-04-11",
+      "type": "critical",
+      "event": "Case 1 dies on board — Patient zero",
+      "detail": "Dutch male. Symptoms from Apr 6 (fever, headache, diarrhoea, respiratory distress). Exposed to rodents during birdwatching in Argentina."
+    },
+    {
+      "date": "2026-04-01",
+      "type": "start",
+      "event": "MV Hondius departs Ushuaia, Argentina",
+      "detail": "147 people on board (88 passengers, 59 crew), 23 nationalities. Itinerary: Antarctica, South Georgia, Tristan da Cunha, St Helena, Ascension Island, Cape Verde."
+    }
   ]
 }
