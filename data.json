@@ -1,16 +1,16 @@
 {
   "meta": {
-    "lastUpdated": "2026-05-14T21:55:18Z",
+    "lastUpdated": "2026-05-15T08:30:58Z",
     "source": "WHO DON600 (8 May 2026) + hantavirus.live (live) + hantavirusmap.com (live)",
     "nextUpdate": "auto — every 2 hours via GitHub Actions"
   },
   "outbreak": {
     "name": "MV Hondius — Andes Virus Cluster",
-    "cases": 12,
+    "cases": 10,
     "confirmed": 8,
     "probable": 2,
     "deaths": 3,
-    "cfr": 25.0,
+    "cfr": 30.0,
     "contacts": 22,
     "status": "active",
     "ship": "MV Hondius (Dutch-flagged)",
